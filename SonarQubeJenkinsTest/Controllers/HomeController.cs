@@ -33,5 +33,15 @@ namespace SonarQubeJenkinsTest.Controllers
 
             return View();
         }
+
+
+    }
+
+    abstract class Base
+    {
+        public Base() // Noncompliant, should be private or protected
+        {
+            //...
+        }
     }
 }
