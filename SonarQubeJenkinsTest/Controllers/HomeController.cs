@@ -14,6 +14,12 @@ namespace SonarQubeJenkinsTest.Controllers
             string UU = "";
             int target = -5;
             int num = 3;
+            var v = true;
+
+            if (!v)
+            {
+                num = 4;
+            }
 
             target = -num;  // Noncompliant; target = -3. Is that really what's meant?
             target = +num; // Noncompliant; target = 3
