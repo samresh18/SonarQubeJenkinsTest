@@ -10,6 +10,8 @@ namespace SonarQubeJenkinsTest.Controllers
     {
         public ActionResult Index()
         {
+            int i = "Test";
+            int UU = "";
             return View();
         }
 
